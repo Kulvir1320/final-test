@@ -13,6 +13,12 @@
 		9B3C949F237DE06300575C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3C949D237DE06300575C99 /* Main.storyboard */; };
 		9B3C94A1237DE06300575C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B3C94A0237DE06300575C99 /* Assets.xcassets */; };
 		9B3C94A4237DE06300575C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B3C94A2237DE06300575C99 /* LaunchScreen.storyboard */; };
+		9B3C94AC237DE24500575C99 /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C94AB237DE24500575C99 /* StudentTableViewController.swift */; };
+		9B3C94AE237DE81E00575C99 /* studentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C94AD237DE81E00575C99 /* studentData.swift */; };
+		9BC62A09238051830021B948 /* semseterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC62A08238051830021B948 /* semseterTableViewController.swift */; };
+		9BC62A0D238055F10021B948 /* courseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC62A0C238055F10021B948 /* courseList.swift */; };
+		9BC62A0F238067CF0021B948 /* Win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9BC62A0E238067CF0021B948 /* Win.wav */; };
+		9BC62A1123806E010021B948 /* GpaCalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC62A1023806E010021B948 /* GpaCalculateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		9B3C94A0237DE06300575C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B3C94A3237DE06300575C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B3C94A5237DE06300575C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B3C94AB237DE24500575C99 /* StudentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
+		9B3C94AD237DE81E00575C99 /* studentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentData.swift; sourceTree = "<group>"; };
+		9BC62A08238051830021B948 /* semseterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = semseterTableViewController.swift; sourceTree = "<group>"; };
+		9BC62A0C238055F10021B948 /* courseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = courseList.swift; sourceTree = "<group>"; };
+		9BC62A0E238067CF0021B948 /* Win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Win.wav; sourceTree = "<group>"; };
+		9BC62A1023806E010021B948 /* GpaCalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpaCalculateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +68,18 @@
 		9B3C9496237DE06300575C99 /* final test */ = {
 			isa = PBXGroup;
 			children = (
+				9BC62A0E238067CF0021B948 /* Win.wav */,
 				9B3C9497237DE06300575C99 /* AppDelegate.swift */,
 				9B3C9499237DE06300575C99 /* SceneDelegate.swift */,
 				9B3C949B237DE06300575C99 /* ViewController.swift */,
+				9B3C94AD237DE81E00575C99 /* studentData.swift */,
 				9B3C949D237DE06300575C99 /* Main.storyboard */,
 				9B3C94A0237DE06300575C99 /* Assets.xcassets */,
+				9BC62A1023806E010021B948 /* GpaCalculateViewController.swift */,
 				9B3C94A2237DE06300575C99 /* LaunchScreen.storyboard */,
+				9BC62A0C238055F10021B948 /* courseList.swift */,
+				9BC62A08238051830021B948 /* semseterTableViewController.swift */,
+				9B3C94AB237DE24500575C99 /* StudentTableViewController.swift */,
 				9B3C94A5237DE06300575C99 /* Info.plist */,
 			);
 			path = "final test";
@@ -126,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B3C94A4237DE06300575C99 /* LaunchScreen.storyboard in Resources */,
+				9BC62A0F238067CF0021B948 /* Win.wav in Resources */,
 				9B3C94A1237DE06300575C99 /* Assets.xcassets in Resources */,
 				9B3C949F237DE06300575C99 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC62A0D238055F10021B948 /* courseList.swift in Sources */,
 				9B3C949C237DE06300575C99 /* ViewController.swift in Sources */,
 				9B3C9498237DE06300575C99 /* AppDelegate.swift in Sources */,
+				9B3C94AC237DE24500575C99 /* StudentTableViewController.swift in Sources */,
+				9BC62A1123806E010021B948 /* GpaCalculateViewController.swift in Sources */,
 				9B3C949A237DE06300575C99 /* SceneDelegate.swift in Sources */,
+				9B3C94AE237DE81E00575C99 /* studentData.swift in Sources */,
+				9BC62A09238051830021B948 /* semseterTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
