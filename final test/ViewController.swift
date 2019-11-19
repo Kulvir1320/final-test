@@ -13,12 +13,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var lastname: UITextField!
     @IBOutlet weak var firstname: UITextField!
     @IBOutlet weak var studentId: UITextField!
+    var alreadyExit: Bool = false
     var delgateofStudent: StudentTableViewController?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let tapgesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        self.view.addGestureRecognizer(tapgesture)
     }
-
+    @objc func viewTapped() {
+        lastname.resignFirstResponder()
+        firstname.resignFirstResponder()
+        studentId.resignFirstResponder()
+    }
+    
+   
+    @IBAction func viewEditTextField(_ sender: UITextField) {
+         sender.resignFirstResponder()
+    }
+    
     @IBAction func saveButton(_ sender: UIButton) {
        
         let alertController = UIAlertController(title: "alert", message: "Are you Sure?", preferredStyle: .alert)
@@ -29,8 +42,20 @@ class ViewController: UIViewController {
             let StudentId = self.studentId.text
                                            
             let StuData = StudentStructure(firstName: FirstName!, lastName: LastName!, studentID: StudentId!)
+//            for item in StudentStructure.studentsData {
+//                if item.studentID ==  StudentId{
+//                    self.alreadyExit = true
+//                    break
+//                }
+//                if self.alreadyExit {
+//                    let alert = UIAlertController(title: "message", message: "you are already exit ", preferredStyle: .alert)
+//                } else{
+                     StudentStructure.studentsData.append(StuData)
+//                }
+                
+//            }
                                            
-            StudentStructure.studentsData.append(StuData)
+           
                                     
           
             
